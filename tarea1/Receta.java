@@ -13,8 +13,7 @@ import java.util.ArrayList;
  */
 public class Receta {
     
-    String nombre;
-    
+    String nombre; 
     ArrayList <String> preparacion= new ArrayList <String> ();
     ArrayList <Ingrediente> ingredientes= new ArrayList <Ingrediente> ();
 
