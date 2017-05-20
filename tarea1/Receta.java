@@ -22,6 +22,11 @@ public class Receta {
     	this.ingredientes.add(ingrediente);
     }
     
+    public void addPreparacion(String preparacion)
+    {
+    	this.preparacion.add(preparacion);
+    }
+    
     
     public Receta(String nombre) {
         this.nombre = nombre;
