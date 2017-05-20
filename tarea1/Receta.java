@@ -17,6 +17,12 @@ public class Receta {
     ArrayList <String> preparacion= new ArrayList <String> ();
     ArrayList <Ingrediente> ingredientes= new ArrayList <Ingrediente> ();
 
+    public void addIngrediente(Ingrediente ingrediente)
+    {
+    	this.ingredientes.add(ingrediente);
+    }
+    
+    
     public Receta(String nombre) {
         this.nombre = nombre;
     }
