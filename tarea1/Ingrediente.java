@@ -16,6 +16,12 @@ public class Ingrediente {
     String nombre;
     
     
+    
+	@Override
+	public String toString() {
+		return cantidad + " " + unidad + " " + " de " + nombre;
+	}
+	
 	public String getUnidad() {
 		return unidad;
 	}
