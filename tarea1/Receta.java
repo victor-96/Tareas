@@ -27,8 +27,34 @@ public class Receta {
     	this.preparacion.add(preparacion);
     }
     
+   
+    public String listaringredientes()
+    {
+    	String lista="";
+    	for(Ingrediente i: ingredientes)
+    	lista+=i.toString()+"\n";
+    	return(lista);
+    }
     
-    public Receta(String nombre) {
+    public String listarpreparacion()
+    {
+    	String lista="";
+    	for(int i=0;i<preparacion.size();i++)
+    	{
+    	int paso=i+1;
+    	lista+="Paso " + paso + ":"
+    	+preparacion+preparacion.get(i)+"\n";
+    	}
+    	return(lista);
+    }
+    
+    @Override
+	public String toString() {
+		return "Receta:nombre.toupperCase()" + "\nIngredientes\n" + ingredientes + listaringredientes() + preparacion + listarpreparacion();
+	}
+   
+
+	public Receta(String nombre) {
         this.nombre = nombre;
     }
 
