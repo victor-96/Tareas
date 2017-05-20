@@ -5,6 +5,8 @@
  */
 package tarea1;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Victor
@@ -12,14 +14,14 @@ package tarea1;
 public class Receta {
     
     String nombre;
-    String ingredientes;
+    ArrayList <Ingrediente> ingredientes= new ArrayList <Ingrediente> ();
     String preparacion;
 
     public Receta(String nombre) {
         this.nombre = nombre;
     }
 
-    public Receta(String nombre, String ingredientes, String preparacion) {
+    public Receta(String nombre, ArrayList<Ingrediente> ingredientes,String preparacion) {
         this.nombre = nombre;
         this.ingredientes = ingredientes;
         this.preparacion = preparacion;
@@ -33,11 +35,11 @@ public class Receta {
         this.nombre = nombre;
     }
 
-    public String getIngredientes() {
+    public ArrayList<Ingrediente> getIngredientes() {
         return ingredientes;
     }
 
-    public void setIngredientes(String ingredientes) {
+    public void setIngredientes(ArrayList<Ingrediente> ingredientes) {
         this.ingredientes = ingredientes;
     }
 
@@ -48,6 +50,6 @@ public class Receta {
     public void setPreparacion(String preparacion) {
         this.preparacion = preparacion;
     }
-    
+
     
 }
