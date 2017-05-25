@@ -14,6 +14,7 @@ public class Ingrediente {
     float cantidad;
     String unidad;
     String nombre;
+     
     
     
     

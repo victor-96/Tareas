@@ -61,13 +61,19 @@ public class Receta {
         this.nombre = nombre;
     }
 
-    public Receta(String nombre, ArrayList<Ingrediente> ingredientes,ArrayList<String> preparacion) {
-        this.nombre = nombre;
-        this.preparacion = preparacion;
-        this.ingredientes = ingredientes;
-    }
+    
 
-    public String getNombre() {
+    public Receta(String nombre, ArrayList<String> preparacion, ArrayList<Ingrediente> ingredientes, int personas,
+			String autor) {
+		super();
+		this.nombre = nombre;
+		this.preparacion = preparacion;
+		this.ingredientes = ingredientes;
+		this.personas = personas;
+		this.autor = autor;
+	}
+
+	public String getNombre() {
         return nombre;
     }
 
@@ -106,7 +112,11 @@ public class Receta {
 	public void setAutor(String autor) {
 		this.autor = autor;
 	}  
-
-    
-    
+   
+	public Receta recetaPara(int personas)
+	{
+		return new Receta(nombre,preparacion,ingredientes,personas,autor);
+		
+	}
+	
 }
